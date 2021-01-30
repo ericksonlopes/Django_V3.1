@@ -6,3 +6,15 @@ Executar projeto:
 
 Criar aplicações:
     py manage.py startapp polls
+
+Criando ponto de migração do banco de dados
+    py manage.py makemigrations
+
+Migrando aplicação
+    py manage.py migrate
+
+Exibindo sql de um modelo de migração
+    py manage.py sqlmigrate polls 0001
+
+Criando super usuario
+    py manage.py createsuperuser
