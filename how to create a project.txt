@@ -3,3 +3,6 @@ Criando Projeto:
 
 Executar projeto:
     py manage.py runserver
+
+Criar aplicações:
+    py manage.py startapp polls
