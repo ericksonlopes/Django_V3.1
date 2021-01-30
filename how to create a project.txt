@@ -1,0 +1,5 @@
+Criando Projeto:
+    django-admin startptoject mysite
+
+Executar projeto:
+    py manage.py runserver
