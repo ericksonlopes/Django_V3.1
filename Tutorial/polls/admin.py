@@ -1,7 +1,9 @@
 from django.contrib import admin
+from .models import Question
 
-from .models import Question, Choice
 
-# Registrando aplicação dentro do admin
-admin.site.register(Question)
-admin.site.register(Choice)
+class QuestionAdmin(admin.ModelAdmin):
+    fields = ['pub_date', 'question_text']
+
+
+admin.site.register(Question, QuestionAdmin)
