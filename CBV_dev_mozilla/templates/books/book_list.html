@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Lista de livros</h1>
+
+{% if list_book %}
+    <ul>
+        {% for book in list_book %}
+        <li><a href="#">{{ book.title }}</a> - {{ book.author }}</li>
+        {% endfor %}
+    </ul>
+
+{% else %}
+    <h1>Nehum livro encontrado !</h1>
+{% endif %}
+
+</body>
+</html>
